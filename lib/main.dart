@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:name/popup_page.dart';
 import 'package:name/setting_page.dart';
-
 import 'drawer.dart';
 
 void main() {
@@ -21,7 +21,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         '/': (context) => const MyHomePage(),
-        '/setting': (context) => const SettingPage()
+        '/setting': (context) => const SettingPage(),
+        '/popup': (context) => const PopupPage()
       },
     );
   }
