@@ -35,7 +35,7 @@ class _ListPageState extends State<ListPage> {
     final prefs = await SharedPreferences.getInstance();
     final saveData = prefs.setStringList("fruits", fruits);
     }
-  
+
 
   @override
   Widget build(BuildContext context) {
@@ -54,6 +54,15 @@ class _ListPageState extends State<ListPage> {
                     controller: _controller,
                     decoration: const InputDecoration(
                       hintText: "아이템 입력", border: OutlineInputBorder()),
+                    onSubmitted: (value) {
+                      final text = value.trim();
+                      if (text.isNotEmpty) {
+                        setState(() {
+                          fruits.add(text);
+                          _controller.clear();
+                        });
+                      }
+                    },
                   )),
                   const SizedBox(width: 10),
                   ElevatedButton(
