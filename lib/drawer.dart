@@ -40,14 +40,59 @@ class MyDrawer extends StatelessWidget {
               }
           ),
           ListTile(
-              leading: const Icon(Icons.settings),
+              leading: const Icon(Icons.info),
               title: const Text('팝업 테스트'),
               onTap: () {
                 Navigator.pushNamed(
                     context, "/popup"
                 );
               }
-          )
+          ),
+          ListTile(
+              leading: const Icon(Icons.display_settings),
+              title: const Text('Flex 예제'),
+              onTap: () {
+                Navigator.pushNamed(
+                    context, "/flex"
+                );
+              }
+          ),
+          ListTile(
+              leading: const Icon(Icons.image),
+              title: const Text('Image 예제'),
+              onTap: () {
+                Navigator.pushNamed(
+                    context, "/image"
+                );
+              }
+          ),
+          ListTile(
+              leading: const Icon(Icons.radio_button_checked),
+              title: const Text('Button 예제'),
+              onTap: () {
+                Navigator.pushNamed(
+                    context, "/button"
+                );
+              }
+          ),
+          ListTile(
+              leading: const Icon(Icons.input),
+              title: const Text('Input 예제'),
+              onTap: () {
+                Navigator.pushNamed(
+                    context, "/input"
+                );
+              }
+          ),
+          ListTile(
+              leading: const Icon(Icons.list),
+              title: const Text('List 예제'),
+              onTap: () {
+                Navigator.pushNamed(
+                    context, "/list"
+                );
+              }
+          ),
         ],
       ),
     );
