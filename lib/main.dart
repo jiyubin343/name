@@ -7,6 +7,7 @@ import 'package:name/layout_page.dart';
 import 'package:name/list_page.dart';
 import 'package:name/popup_page.dart';
 import 'package:name/setting_page.dart';
+import 'package:name/todo-page.dart';
 import 'drawer.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        '/': (context) => const LayoutPage(),
+        '/': (context) => const TodoPage(),
         '/setting': (context) => const SettingPage(),
         '/popup': (context) => const PopupPage(),
         '/flex': (context) => const FlexPage(),
@@ -34,9 +35,8 @@ class MyApp extends StatelessWidget {
         '/button': (context) => const ButtonPage(),
         '/input' : (context) => const InputPage(),
         '/list' : (context) => const ListPage(),
+        "/to-do": (context) => const TodoPage(),
       },
     );
   }
 }
-
-//dd
